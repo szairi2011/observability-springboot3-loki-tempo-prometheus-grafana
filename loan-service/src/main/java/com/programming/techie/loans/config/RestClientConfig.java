@@ -11,7 +11,7 @@ public class RestClientConfig {
     @Bean
     RestTemplate fraudServiceRestTemplate(RestTemplateBuilder restTemplateBuilder) {
         return restTemplateBuilder
-                .rootUri("http://localhost:8081")
+                .rootUri("http://fraud-detection-service:8081")
                 .build();
     }
 }
