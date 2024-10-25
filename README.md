@@ -50,6 +50,12 @@ NB: The project is self deployable where:
 5. Fraud detection service: http://emea-tun-ptds01:9071
 6. Loan service: http://emea-tun-ptds01:9070
 
+## Visualize the µ-services logs
+You can also check the service logs following the application deployment by running the following command:
+```sh
+docker-compose logs -f -t loan-service fraud-detection-service
+```
+
 ## Postman
 A postman collection containing a GET and a POST requests is created to inspect and create few tracing, metrics, and logs.
 It's called [observability_grafana_stack](https://web.postman.co/workspace/My-Workspace~a2e114be-c0f2-4f0e-8be6-bee12739f65e/collection/6610248-a331bc7d-2130-4725-8d33-4279575bf59b?action=share&source=copy-link&creator=6610248)
@@ -66,3 +72,8 @@ $ docker-compose down -v
 ## Project Overview
 
 ![img.png](img.png)
+
+## Other applications
+Another example project of using opentelemetry with jaeger without using Grafana is available under 
+"C:\Users\e1079458\work\learn-opentelemetry\distributed-tracing-with-spring-boot\distributed-tracing-spring-boot-opentelemetry-jaeger".
+The corresponding README.md is up to date.
